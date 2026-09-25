@@ -1,7 +1,7 @@
 import { SITE } from "./config.js";
 
 const root = document.getElementById("app");
-const path = window.location.pathname.replace(/\\/$/,"") || "/";
+const path = window.location.pathname.replace(/\/$/,"") || "/";
 const base = window.location.pathname.startsWith("/Ventro-Bank-Website") ? "/Ventro-Bank-Website" : "";
 const link = p => base + (p === "/" ? "/" : p);
 
