@@ -5,5 +5,7 @@ export const SITE = {
   androidPlayUrl: "",
   iosUrl: "",
   androidStatus: "AVAILABLE NOW",
-  iosStatus: "COMING SOON"
+  iosStatus: "COMING SOON",
+  purchasePriceCad: 10,
+  backendApiUrl: ""
 };
