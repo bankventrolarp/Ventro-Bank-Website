@@ -1,26 +1,24 @@
 name = "ventro-bank-api"
-main = "src/index.js"
+main = "src/api.js"
 compatibility_date = "2026-09-28"
 
-# Create a D1 database and replace DATABASE_ID before deployment.
 [[d1_databases]]
 binding = "DB"
 database_name = "ventro-bank"
 database_id = "REPLACE_WITH_D1_DATABASE_ID"
 
-# Create an R2 bucket and replace the bucket name before deployment.
 [[r2_buckets]]
 binding = "APK_BUCKET"
 bucket_name = "ventro-bank-releases"
 
 [vars]
-FRONTEND_ORIGIN = "https://bankventrolarp.github.io"
+FRONTEND_ORIGIN = "https://bankventrolarp.github.io/Ventro-Bank-Website"
 STRIPE_PRICE_ID = "REPLACE_WITH_CA10_ONE_TIME_PRICE_ID"
 STRIPE_SUBSCRIPTION_PRICE_ID = "REPLACE_WITH_UPDATE_SUBSCRIPTION_PRICE_ID"
 ADMIN_EMAIL = "bankventrolarp@gmail.com"
+EMAIL_FROM = "Ventro Bank <updates@your-verified-domain.example>"
 
 # Set secrets with `wrangler secret put` instead of committing them:
 # STRIPE_SECRET_KEY
 # STRIPE_WEBHOOK_SECRET
 # RESEND_API_KEY
-# APP_DOWNLOAD_ORIGIN (optional, if you use a separate storage proxy)
